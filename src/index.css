@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+  --font-hand: "Caveat", cursive;
+
+  --color-ocean: #0b3d3d;
+  --color-ocean-light: #135353;
+  --color-forest: #1b4d1b;
+  --color-forest-light: #276b27;
+  --color-earth: #5c4033;
+  --color-earth-light: #7a5644;
+
+  --color-amber: #ff6b35;
+  --color-water: #4a90d9;
+  --color-gold: #d4a843;
+  --color-coral: #e74c3c;
+
+  --color-midnight: #0a1f1a;
+  --color-parchment: #f5f1e9;
+  --color-ink: #1a1a1a;
+  --color-muted: #6b7b6b;
+
+  --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
+  --animate-flow: flow 20s linear infinite;
+  --animate-ripple: ripple 4s ease-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+@keyframes flow {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -200; }
+}
+
+@keyframes ripple {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-midnight);
+  color: var(--color-parchment);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-water);
+  color: var(--color-midnight);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono-stat {
+  font-family: var(--font-mono);
+}
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--color-amber);
+  color: var(--color-ink);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-midnight);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-forest-light);
+  border-radius: 999px;
+}
