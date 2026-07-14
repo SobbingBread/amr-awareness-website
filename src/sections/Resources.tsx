@@ -3,6 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { Section, Kicker } from "../components/ui/Section";
 import { Reveal } from "../components/ui/Reveal";
 import { references } from "../data/references";
+import { asset } from "../lib/asset";
 
 export function Resources() {
   const { t } = useLanguage();
@@ -28,7 +29,7 @@ export function Resources() {
         </div>
         <div className="flex shrink-0 gap-3">
           <a
-            href="/docs/reclaiming-the-earth-we-farm-essay.pdf"
+            href={asset("docs/reclaiming-the-earth-we-farm-essay.pdf")}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-earth/40 px-4 py-2 text-sm font-semibold text-earth transition hover:bg-earth/10"
@@ -36,7 +37,7 @@ export function Resources() {
             {t.resources.essayRead}
           </a>
           <a
-            href="/docs/reclaiming-the-earth-we-farm-essay.pdf"
+            href={asset("docs/reclaiming-the-earth-we-farm-essay.pdf")}
             download
             className="inline-flex items-center gap-2 rounded-full bg-earth px-4 py-2 text-sm font-semibold text-parchment transition hover:scale-[0.98]"
           >

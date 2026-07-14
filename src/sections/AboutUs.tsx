@@ -3,6 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { Section } from "../components/ui/Section";
 import { Reveal, RevealGroup, revealItem } from "../components/ui/Reveal";
 import { team } from "../data/team";
+import { asset } from "../lib/asset";
 import { motion } from "framer-motion";
 
 export function AboutUs() {
@@ -57,7 +58,7 @@ export function AboutUs() {
 
       <Reveal delay={0.1} className="mt-10">
         <div className="flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-[#143824] p-8 text-center sm:p-10">
-          <img src="/images/school-logo.png" alt={t.about.institutionName} className="w-32 max-w-[200px] sm:w-40" />
+          <img src={asset("images/school-logo.png")} alt={t.about.institutionName} className="w-32 max-w-[200px] sm:w-40" />
           <div>
             <p className="font-display text-lg font-bold tracking-wide text-white">{t.about.institutionName}</p>
             <p className="mt-1 text-sm text-parchment/70">{t.about.institutionLocation}</p>

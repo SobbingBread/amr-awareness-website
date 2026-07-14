@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { asset } from "../lib/asset";
 
 const sections = [
   { id: "home", key: "home" },
@@ -49,7 +50,7 @@ export function Header() {
         </a>
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-8">
           <a href="#home" className="flex items-center gap-2 font-display text-lg font-bold text-parchment">
-            <img src="/images/school-logo.png" alt="" className="h-9 w-9 rounded-full bg-white/90 p-0.5" />
+            <img src={asset("images/school-logo.png")} alt="" className="h-9 w-9 rounded-full bg-white/90 p-0.5" />
             <span className="hidden sm:inline">Reclaiming the Earth</span>
           </a>
 

@@ -5,6 +5,7 @@ import { Reveal } from "../components/ui/Reveal";
 import { PledgeCounter } from "../components/ui/PledgeCounter";
 import { ShareButtons } from "../components/ui/ShareButtons";
 import { Newsletter } from "../components/ui/Newsletter";
+import { asset } from "../lib/asset";
 
 export function TakeAction() {
   const { t } = useLanguage();
@@ -37,7 +38,7 @@ export function TakeAction() {
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
             <h3 className="font-display text-lg font-bold">{t.takeAction.resourcesTitle}</h3>
             <a
-              href="/docs/reclaiming-the-earth-we-farm-essay.pdf"
+              href={asset("docs/reclaiming-the-earth-we-farm-essay.pdf")}
               download
               className="mt-4 inline-flex items-center gap-2 rounded-full border border-water/40 px-5 py-2.5 text-sm font-semibold text-water transition hover:bg-water/10"
             >

@@ -1,4 +1,5 @@
 import { useLanguage } from "../context/LanguageContext";
+import { asset } from "../lib/asset";
 
 const links = [
   { id: "home", key: "home" },
@@ -20,7 +21,7 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
             <div className="flex items-center gap-2">
-              <img src="/images/school-logo.png" alt="" className="h-10 w-10 rounded-full bg-white/90 p-0.5" />
+              <img src={asset("images/school-logo.png")} alt="" className="h-10 w-10 rounded-full bg-white/90 p-0.5" />
               <span className="font-display text-lg font-bold">Reclaiming the Earth We Farm</span>
             </div>
             <p className="mt-3 max-w-xs text-sm text-parchment/70">{t.footer.tagline}</p>
