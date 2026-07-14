@@ -32,6 +32,24 @@ npm run build     # type-check + production build
 npm run lint       # oxlint
 ```
 
+## Deployment (GitHub Pages)
+
+The site is served as a project page at `https://<user>.github.io/amr-awareness-website/`, so
+`vite.config.ts` sets `base: '/amr-awareness-website/'`. There are two supported ways to deploy —
+pick one:
+
+**Option A — GitHub Actions (recommended, auto-builds on push)**
+1. Repo **Settings → Pages → Source → GitHub Actions**.
+2. Push to `main` (or `claude/new-session-i0pa9v`). The workflow in
+   `.github/workflows/deploy.yml` runs `npm run build` and publishes `docs/` automatically.
+
+**Option B — Serve the committed build from `/docs`**
+1. Run `npm run build` (outputs to `docs/`) and commit the `docs/` folder.
+2. Repo **Settings → Pages → Source → Deploy from a branch**, choose the branch, folder **`/docs`**.
+
+Both work because the build already targets `docs/` and includes a `.nojekyll` marker. With Option A
+you never need to commit build output; with Option B you must rebuild and commit `docs/` on every change.
+
 ## Notes
 
 - The hero's before/after river comparison uses illustrated SVG artwork (no source photograph of
