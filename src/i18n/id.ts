@@ -330,6 +330,11 @@ export const id: Content = {
       "\"Reclaiming the Earth We Farm: Sustainable Agriculture and Environmental Action as a Global Strategy Against Antimicrobial Resistance\" — esai akademik lengkap yang menjadi dasar situs web ini.",
     essayDownload: "Unduh PDF",
     essayRead: "Baca daring",
+    posterTitle: "Poster Kami",
+    posterText:
+      "Infografis kompetisi kami — keseluruhan kisah AMR dan Sungai Citarum, dirangkum dalam satu visual. Ketuk untuk melihat ukuran penuh.",
+    posterView: "Lihat ukuran penuh",
+    posterDownload: "Unduh poster",
     referencesTitle: "Referensi",
     referencesIntro: "Seluruh 16 sumber yang dikutip dalam esai, dalam gaya APA.",
     glossaryTitle: "Glosarium",

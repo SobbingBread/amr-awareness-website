@@ -205,6 +205,10 @@ export interface Content {
     essayText: string;
     essayDownload: string;
     essayRead: string;
+    posterTitle: string;
+    posterText: string;
+    posterView: string;
+    posterDownload: string;
     referencesTitle: string;
     referencesIntro: string;
     glossaryTitle: string;

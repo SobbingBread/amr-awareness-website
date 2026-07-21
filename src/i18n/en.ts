@@ -330,6 +330,11 @@ export const en: Content = {
       "\"Reclaiming the Earth We Farm: Sustainable Agriculture and Environmental Action as a Global Strategy Against Antimicrobial Resistance\" — the complete academic essay this website is based on.",
     essayDownload: "Download PDF",
     essayRead: "Read online",
+    posterTitle: "The Poster",
+    posterText:
+      "Our competition infographic — the whole story of AMR and the Citarum River, condensed into one visual. Tap to view full size.",
+    posterView: "View full size",
+    posterDownload: "Download poster",
     referencesTitle: "References",
     referencesIntro: "All 16 sources cited in the essay, in APA style.",
     glossaryTitle: "Glossary",

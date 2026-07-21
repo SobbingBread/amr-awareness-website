@@ -4,6 +4,7 @@ import { Section, Kicker } from "../components/ui/Section";
 import { Reveal } from "../components/ui/Reveal";
 import { references } from "../data/references";
 import { asset } from "../lib/asset";
+import { Poster } from "../components/ui/Poster";
 
 export function Resources() {
   const { t } = useLanguage();
@@ -45,6 +46,10 @@ export function Resources() {
             {t.resources.essayDownload}
           </a>
         </div>
+      </Reveal>
+
+      <Reveal delay={0.1} className="mt-6 rounded-2xl border border-ink/10 bg-white/60 p-6">
+        <Poster />
       </Reveal>
 
       <div className="mt-14">
