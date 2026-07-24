@@ -11,7 +11,7 @@ export const id: Content = {
     problem: "Masalah",
     science: "Ilmu Pengetahuan",
     solutions: "Solusi",
-    challenge: "Tantangan Juri",
+    challenge: "Q&A",
     takeAction: "Ambil Tindakan",
     about: "Tentang Kami",
     resources: "Sumber",
@@ -287,7 +287,7 @@ export const id: Content = {
     ],
   },
   challenge: {
-    kicker: "Tantangan Juri",
+    kicker: "Q&A",
     title: "Pikir Anda sudah mengenal AMR? Duduklah di Kursi Juri.",
     subtitle:
       "Setiap pertanyaan di bawah ini telah — atau bisa — ditanyakan oleh juri kompetisi internasional. Kuasai semuanya.",

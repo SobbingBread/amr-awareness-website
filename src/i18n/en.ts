@@ -11,7 +11,7 @@ export const en: Content = {
     problem: "The Problem",
     science: "The Science",
     solutions: "Solutions",
-    challenge: "Judge's Challenge",
+    challenge: "Q&A",
     takeAction: "Take Action",
     about: "About Us",
     resources: "Resources",
@@ -287,7 +287,7 @@ export const en: Content = {
     ],
   },
   challenge: {
-    kicker: "The Judge's Challenge",
+    kicker: "Q&A",
     title: "Think you know AMR? Step into the Judge's Chair.",
     subtitle:
       "Every question below has been asked — or could be asked — by international competition judges. Master them all.",
