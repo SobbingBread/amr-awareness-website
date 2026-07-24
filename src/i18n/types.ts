@@ -62,6 +62,7 @@ export interface Content {
     problem: string;
     science: string;
     solutions: string;
+    challenge: string;
     takeAction: string;
     about: string;
     resources: string;
@@ -164,6 +165,35 @@ export interface Content {
     actionsTitle: string;
     actionsIntro: string;
     actions: string[];
+  };
+  challenge: {
+    kicker: string;
+    title: string;
+    subtitle: string;
+    stats: StatItem[];
+    searchPlaceholder: string;
+    allCategories: string;
+    difficultyLabel: string;
+    difficultyAll: string;
+    difficultyEasy: string;
+    difficultyMedium: string;
+    difficultyHard: string;
+    tldrLabel: string;
+    takeawayLabel: string;
+    noResultsTitle: string;
+    noResultsHint: string;
+    progressLabel: string;
+    progressReady: string;
+    resetLabel: string;
+    simulatorButton: string;
+    simulatorTitle: string;
+    simulatorIntro: string;
+    simulatorStart: string;
+    simulatorThinking: string;
+    simulatorReveal: string;
+    simulatorNext: string;
+    simulatorClose: string;
+    countLabel: string;
   };
   takeAction: {
     kicker: string;

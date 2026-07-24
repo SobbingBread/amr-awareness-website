@@ -8,6 +8,7 @@ const sections = [
   { id: "problem", key: "problem" },
   { id: "science", key: "science" },
   { id: "solutions", key: "solutions" },
+  { id: "challenge", key: "challenge" },
   { id: "take-action", key: "takeAction" },
   { id: "about", key: "about" },
   { id: "resources", key: "resources" },

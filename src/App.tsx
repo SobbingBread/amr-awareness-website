@@ -6,6 +6,7 @@ import { Hero } from "./sections/Hero";
 import { Problem } from "./sections/Problem";
 import { Science } from "./sections/Science";
 import { Solutions } from "./sections/Solutions";
+import { JudgesChallenge } from "./sections/JudgesChallenge";
 import { TakeAction } from "./sections/TakeAction";
 import { AboutUs } from "./sections/AboutUs";
 import { Resources } from "./sections/Resources";
@@ -20,6 +21,7 @@ function App() {
         <Problem />
         <Science />
         <Solutions />
+        <JudgesChallenge />
         <TakeAction />
         <AboutUs />
         <Resources />
