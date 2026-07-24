@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Gavel, Search, Frown } from "lucide-react";
+import { Zap, Search, Frown } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { Section, Kicker } from "../components/ui/Section";
 import { Reveal } from "../components/ui/Reveal";
@@ -74,7 +74,7 @@ export function JudgesChallenge() {
             onClick={() => setSimOpen(true)}
             className="inline-flex items-center gap-2 rounded-full bg-amber px-5 py-3 font-semibold text-midnight shadow-lg shadow-amber/20 transition hover:scale-[0.98]"
           >
-            <Gavel size={18} />
+            <Zap size={18} />
             {t.challenge.simulatorButton}
           </button>
         </Reveal>

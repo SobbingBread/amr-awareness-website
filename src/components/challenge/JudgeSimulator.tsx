@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Gavel, X } from "lucide-react";
+import { Zap, X } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
 import { categoryMap } from "../../data/challengeCategories";
 import { qaItems, type QAItem } from "../../data/judgesChallenge";
@@ -89,7 +89,7 @@ export function JudgeSimulator({ open, onClose }: { open: boolean; onClose: () =
             </button>
 
             <div className="flex items-center gap-2 text-amber">
-              <Gavel size={20} />
+              <Zap size={20} />
               <h3 className="font-display text-xl font-bold">{t.challenge.simulatorTitle}</h3>
             </div>
 

@@ -11,7 +11,7 @@ export const id: Content = {
     problem: "Masalah",
     science: "Ilmu Pengetahuan",
     solutions: "Solusi",
-    challenge: "Q&A",
+    challenge: "Tanya Jawab",
     takeAction: "Ambil Tindakan",
     about: "Tentang Kami",
     resources: "Sumber",
@@ -287,8 +287,8 @@ export const id: Content = {
     ],
   },
   challenge: {
-    kicker: "Q&A",
-    title: "Pikir Anda sudah mengenal AMR? Duduklah di Kursi Juri.",
+    kicker: "Tanya Jawab",
+    title: "Pikir Anda sudah mengenal AMR? Uji kemampuan Anda.",
     subtitle:
       "Setiap pertanyaan di bawah ini telah — atau bisa — ditanyakan oleh juri kompetisi internasional. Kuasai semuanya.",
     stats: [
@@ -311,10 +311,10 @@ export const id: Content = {
     progressLabel: "pertanyaan dijelajahi",
     progressReady: "Anda siap menghadapi juri!",
     resetLabel: "Atur ulang kemajuan",
-    simulatorButton: "Simulasi Pertanyaan Juri",
-    simulatorTitle: "Simulator Juri",
+    simulatorButton: "Kuis Cepat",
+    simulatorTitle: "Kuis Cepat",
     simulatorIntro:
-      "Satu pertanyaan SULIT acak, langsung dari kursi juri. Anda punya 10 detik untuk menjawab dalam hati — lalu ungkap.",
+      "Satu pertanyaan SULIT acak. Anda punya 10 detik untuk menjawab dalam hati — lalu ungkap.",
     simulatorStart: "Beri saya pertanyaan",
     simulatorThinking: "Jawab dalam hati…",
     simulatorReveal: "Ungkap jawaban",

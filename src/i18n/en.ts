@@ -288,7 +288,7 @@ export const en: Content = {
   },
   challenge: {
     kicker: "Q&A",
-    title: "Think you know AMR? Step into the Judge's Chair.",
+    title: "Think you know AMR? Put yourself to the test.",
     subtitle:
       "Every question below has been asked — or could be asked — by international competition judges. Master them all.",
     stats: [
@@ -311,10 +311,10 @@ export const en: Content = {
     progressLabel: "questions explored",
     progressReady: "You're ready for the judges!",
     resetLabel: "Reset progress",
-    simulatorButton: "Simulate a Judge Question",
-    simulatorTitle: "Judge Simulator",
+    simulatorButton: "Quick-Fire Quiz",
+    simulatorTitle: "Quick-Fire Quiz",
     simulatorIntro:
-      "A random HARD question, straight from the judge's chair. You get 10 seconds to answer in your head — then reveal.",
+      "A random HARD question. You get 10 seconds to answer in your head — then reveal.",
     simulatorStart: "Ask me a question",
     simulatorThinking: "Answer in your head…",
     simulatorReveal: "Reveal the answer",
